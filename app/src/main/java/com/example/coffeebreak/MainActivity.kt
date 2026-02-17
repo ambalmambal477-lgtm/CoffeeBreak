@@ -4,44 +4,48 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.coffeebreak.presentation.Authorization.AuthorizationScreen
+import com.example.coffeebreak.presentation.Cafe.CafeScreen
+import com.example.coffeebreak.presentation.Menu.MenuScreen
+import com.example.coffeebreak.presentation.Registartion.RegistrationScreen
+import com.example.coffeebreak.presentation.StartUp.StartUpScreen
+import com.example.coffeebreak.presentation.Welcome.WelcomeScreen
+import com.example.coffeebreak.ui.theme.AppTheme
 import com.example.coffeebreak.ui.theme.CoffeeBreakTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            CoffeeBreakTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+            AppTheme {
+                val navController = rememberNavController()
+                NavHost(navController = navController, startDestination = Navigation.Welcome){
+                    composable<Navigation.Welcome> {
+                        WelcomeScreen(navController = navController)
+                    }
+                    composable<Navigation.Auth> {
+                        AuthorizationScreen(navController)
+                    }
+                    composable<Navigation.Startup> {
+                        StartUpScreen(navController)
+                    }
+                    composable<Navigation.Registration> {
+                        RegistrationScreen(navController)
+                    }
+                    composable<Navigation.Cafe> {
+                        CafeScreen(navController)
+                    }
+                    composable<Navigation.Menu> {
+                        MenuScreen(navController)
+                    }
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CoffeeBreakTheme {
-        Greeting("Android")
     }
 }
