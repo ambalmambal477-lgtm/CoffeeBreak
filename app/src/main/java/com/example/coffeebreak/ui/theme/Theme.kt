@@ -46,7 +46,10 @@ data class ThemeColors(
     val forgotPassword : Color = Color(0xFF147F37),
     val signInWith: Color = Color.Black,
     val signUpAuth: Color = Color(0xFF14AC46),
-    val backIcon: Color = Color.Black
+    val backIcon: Color = Color.Black,
+    val cafeBox: Color = Color.White,
+    val outlinedTf: Color = Color(0xFFB7BBC9),
+    val resend: Color = Color(0xFF324A59)
 )
 
 private val LocalTheme = staticCompositionLocalOf {
@@ -68,7 +71,10 @@ fun AppTheme(
             forgotPassword = Color(0xFF324A59),
             signInWith = Color.White,
             signUpAuth = Color(0xFF4F7993),
-            backIcon = Color(0xFF4F7993)
+            backIcon = Color(0xFF4F7993),
+            cafeBox = Color(0xFF272D31),
+            outlinedTf = Color(0xFF585A62),
+            resend = Color(0xFFA1A1A1)
         )
     } else{
         ThemeColors(
@@ -81,7 +87,10 @@ fun AppTheme(
             forgotPassword = Color(0xFF147F37),
             signInWith = Color.Black,
             signUpAuth = Color(0xFF14AC46),
-            backIcon = Color.Black
+            backIcon = Color.Black,
+            cafeBox = Color.White,
+            outlinedTf = Color(0xFFB7BBC9),
+            resend = Color(0xFF324A59)
         )
     }
 

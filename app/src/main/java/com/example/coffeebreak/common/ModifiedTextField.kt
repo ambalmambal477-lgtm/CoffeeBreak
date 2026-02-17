@@ -90,6 +90,7 @@ fun ModifiedTextField(
             PasswordVisualTransformation()
         } else{
             VisualTransformation.None
-        }
+        },
+        singleLine = true
     )
 }
