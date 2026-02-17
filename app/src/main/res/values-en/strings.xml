@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoffeeBreak</string>
+    <string name="coffee_break">Coffee break</string>
+    <string name="feel_barista">Feel like a\nbarista!</string>
+    <string name="any_coffee">Any coffee for your order</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome">Welcome</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="sign_in_with">Log in using</string>
+    <string name="first_time">For the first time? </string>
+    <string name="sign_up_auth">Register.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="createaccounthere">Create an account here</string>
+    <string name="user_name">Username</string>
+    <string name="mobile_phone_number">Mobile phone number</string>
+    <string name="iconfirm">I accept the terms of the user agreement.</string>
+    <string name="already_registered">Have you already registered? </string>
+    <string name="sign_in_reg">Enter.</string>
+</resources>

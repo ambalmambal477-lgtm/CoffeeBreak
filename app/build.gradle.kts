@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -13,12 +15,18 @@ android {
 
     defaultConfig {
         applicationId = "com.example.coffeebreak"
-        minSdk = 33
+        minSdk = 29
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField(
+            "String",
+            "GOOGLE_ID",
+            "\"${getLocalProperty("GOOGLE_ID")}\""
+        )
     }
 
     buildTypes {
@@ -113,4 +121,15 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+}
+
+private fun getLocalProperty(key: String): String{
+    val properties = Properties()
+    val localPropertiesFile = project.rootProject.file("local.properties")
+    return if(localPropertiesFile.exists()){
+        localPropertiesFile.inputStream().use { properties.load(it) }
+        properties.getProperty(key, "")
+    } else{
+        ""
+    }
 }
