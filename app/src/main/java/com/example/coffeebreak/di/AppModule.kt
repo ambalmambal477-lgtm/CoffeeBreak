@@ -1,8 +1,12 @@
 package com.example.coffeebreak.di
 
 import com.example.coffeebreak.data.repositoryImpl.AuthRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.CoffeeRepositoryImpl
 import com.example.coffeebreak.domain.repository.AuthRepository
+import com.example.coffeebreak.domain.repository.CoffeeShopRepository
 import com.example.coffeebreak.domain.usecase.AuthUseCase
+import com.example.coffeebreak.domain.usecase.IsEmailValidUseCase
+import com.example.coffeebreak.domain.usecase.IsPasswordValidUseCase
 import com.example.coffeebreak.domain.usecase.RegistrationUseCase
 import dagger.Module
 import dagger.Provides
@@ -22,6 +26,12 @@ object AppModule {
 
     @Provides
     @Singleton
+    fun provideCoffeeShopRepository(): CoffeeShopRepository{
+        return CoffeeRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
     fun provideAuthUseCase(
         authRepository: AuthRepository
     ): AuthUseCase{
@@ -34,5 +44,17 @@ object AppModule {
         authRepository: AuthRepository
     ): RegistrationUseCase{
         return RegistrationUseCase(authRepository)
+    }
+
+    @Provides
+    @Singleton
+    fun provideIsPasswordValidUseCase(): IsPasswordValidUseCase{
+        return IsPasswordValidUseCase()
+    }
+
+    @Provides
+    @Singleton
+    fun provideIsEmailValidUseCase(): IsEmailValidUseCase{
+        return IsEmailValidUseCase()
     }
 }

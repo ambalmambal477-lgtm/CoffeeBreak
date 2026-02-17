@@ -19,4 +19,13 @@
     <string name="iconfirm">I accept the terms of the user agreement.</string>
     <string name="already_registered">Have you already registered? </string>
     <string name="sign_in_reg">Enter.</string>
+    <string name="choose_cafe">Choose a Coffee break coffee shop</string>
+    <string name="enter_email_address">Enter your email address</string>
+    <string name="check">Check</string>
+    <string name="enter_code">Enter the code we sent you by email</string>
+    <string name="resend">Send again in 00:</string>
+    <string name="reset_password">Password Recovery</string>
+    <string name="enter_new_password">Enter a new password</string>
+    <string name="error_alert">Error</string>
+    <string name="incorrect_email">Incorrect email</string>
 </resources>

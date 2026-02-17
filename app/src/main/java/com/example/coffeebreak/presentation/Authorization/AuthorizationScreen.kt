@@ -131,7 +131,10 @@ fun AuthorizationScreen(navController: NavController, vm: AuthorizationVM = hilt
                     color = Theme.colors.forgotPassword,
                     modifier = Modifier
                         .padding(top = 27.dp)
-                        .align(Alignment.CenterHorizontally),
+                        .align(Alignment.CenterHorizontally)
+                        .clickable{
+                            navController.navigate(Navigation.ForgotPassword)
+                        },
                     fontFamily = robotoRegular,
                     fontWeight = FontWeight(400),
                     fontSize = 14.sp)

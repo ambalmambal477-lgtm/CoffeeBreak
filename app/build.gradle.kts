@@ -27,6 +27,12 @@ android {
             "GOOGLE_ID",
             "\"${getLocalProperty("GOOGLE_ID")}\""
         )
+
+        buildConfigField(
+            "String",
+            "MAPKIT",
+            "\"${getLocalProperty("MAPKIT")}\""
+        )
     }
 
     buildTypes {
