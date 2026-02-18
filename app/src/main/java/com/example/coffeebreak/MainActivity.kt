@@ -11,8 +11,12 @@ import com.example.coffeebreak.presentation.Authorization.AuthorizationScreen
 import com.example.coffeebreak.presentation.Cafe.CafeScreen
 import com.example.coffeebreak.presentation.ForgotPassword.ForgotPasswordScreen
 import com.example.coffeebreak.presentation.Menu.MenuScreen
+import com.example.coffeebreak.presentation.OrderOptions.OrderOptionsScreen
+import com.example.coffeebreak.presentation.Profile.ProfileScreen
+import com.example.coffeebreak.presentation.Redeem.RedeemScreen
 import com.example.coffeebreak.presentation.Registartion.RegistrationScreen
 import com.example.coffeebreak.presentation.ResetPassword.ResetPasswordScreen
+import com.example.coffeebreak.presentation.Reward.RewardScreen
 import com.example.coffeebreak.presentation.StartUp.StartUpScreen
 import com.example.coffeebreak.presentation.TwoFactorVerification.TwoFactorVerificationScreen
 import com.example.coffeebreak.presentation.Welcome.WelcomeScreen
@@ -55,6 +59,21 @@ class MainActivity : ComponentActivity() {
                     }
                     composable<Navigation.ResetPassword> {
                         ResetPasswordScreen(navController)
+                    }
+                    composable<Navigation.MyOrderHistory> {
+
+                    }
+                    composable<Navigation.RewardScreen> {
+                        RewardScreen(navController)
+                    }
+                    composable<Navigation.Profile> {
+                        ProfileScreen(navController)
+                    }
+                    composable<Navigation.OrderOptions> {
+                        OrderOptionsScreen(navController)
+                    }
+                    composable<Navigation.Redeem> {
+                        RedeemScreen(navController)
                     }
                 }
             }

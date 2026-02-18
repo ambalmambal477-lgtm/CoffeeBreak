@@ -13,6 +13,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import io.ktor.util.valuesOf
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -49,7 +50,19 @@ data class ThemeColors(
     val backIcon: Color = Color.Black,
     val cafeBox: Color = Color.White,
     val outlinedTf: Color = Color(0xFFB7BBC9),
-    val resend: Color = Color(0xFF324A59)
+    val resend: Color = Color(0xFF324A59),
+    val menuIcons: Color = Color(0xFF001833),
+    val menuBox: Color = Color(0xFF272D31),
+    val bottomBarBack: Color = Color.White,
+    val activeBottomIcon: Color = Color(0xFF324A59),
+    val inactiveBottomIcon: Color = Color(0xFFD8D8D8),
+    val topScreenText: Color = Color(0xFF001833),
+    val profileIcons: Color = Color(0xFF324A59),
+    val profileIconsBack: Color = Color(0xFFF7F8FB),
+    val titleProfileText: Color = Color(0x00183338).copy(alpha = 0.22f),
+    val infoProfileText: Color = Color(0xFF324A59),
+    val pointDate: Color = Color(0x324A5938).copy(alpha = 0.22f),
+    val dateTo: Color = Color(0x324A5980).copy(alpha = 0.5f)
 )
 
 private val LocalTheme = staticCompositionLocalOf {
@@ -74,7 +87,18 @@ fun AppTheme(
             backIcon = Color(0xFF4F7993),
             cafeBox = Color(0xFF272D31),
             outlinedTf = Color(0xFF585A62),
-            resend = Color(0xFFA1A1A1)
+            resend = Color(0xFFA1A1A1),
+            menuIcons = Color(0xFF4F7993),
+            menuBox = Color(0xFF334855),
+            bottomBarBack = Color(0xFF272D31),
+            activeBottomIcon = Color(0xFF4F7993),
+            topScreenText = Color(0xFFD9D9D9),
+            profileIcons = Color(0xFF4F7993),
+            profileIconsBack = Color(0xFF444A4D),
+            titleProfileText = Color(0xFF4F7993),
+            infoProfileText = Color(0xFFAAAAAA),
+            pointDate = Color(0xFFA1A1A1),
+            dateTo = Color(0xFFA1A1A1)
         )
     } else{
         ThemeColors(
@@ -90,7 +114,18 @@ fun AppTheme(
             backIcon = Color.Black,
             cafeBox = Color.White,
             outlinedTf = Color(0xFFB7BBC9),
-            resend = Color(0xFF324A59)
+            resend = Color(0xFF324A59),
+            menuIcons = Color(0xFF001833),
+            menuBox = Color(0xFF272D31),
+            bottomBarBack = Color.White,
+            activeBottomIcon = Color(0xFF324A59),
+            topScreenText = Color(0xFF001833),
+            profileIcons = Color(0xFF324A59),
+            profileIconsBack = Color(0xFFF7F8FB),
+            titleProfileText = Color(0x00183338).copy(alpha = 0.22f),
+            infoProfileText = Color(0xFF324A59),
+            pointDate = Color(0x324A5938).copy(alpha = 0.22f),
+            dateTo = Color(0x324A5980).copy(alpha = 0.5f)
         )
     }
 

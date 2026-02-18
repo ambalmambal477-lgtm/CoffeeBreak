@@ -2,8 +2,12 @@ package com.example.coffeebreak.di
 
 import com.example.coffeebreak.data.repositoryImpl.AuthRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.CoffeeRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.CoffeeShopRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.RedeemRepositoryImpl
 import com.example.coffeebreak.domain.repository.AuthRepository
+import com.example.coffeebreak.domain.repository.CoffeeRepository
 import com.example.coffeebreak.domain.repository.CoffeeShopRepository
+import com.example.coffeebreak.domain.repository.RedeemRepository
 import com.example.coffeebreak.domain.usecase.AuthUseCase
 import com.example.coffeebreak.domain.usecase.IsEmailValidUseCase
 import com.example.coffeebreak.domain.usecase.IsPasswordValidUseCase
@@ -27,7 +31,18 @@ object AppModule {
     @Provides
     @Singleton
     fun provideCoffeeShopRepository(): CoffeeShopRepository{
+        return CoffeeShopRepositoryImpl()
+    }
+    @Provides
+    @Singleton
+    fun provideCoffeeRepository(): CoffeeRepository{
         return CoffeeRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideRedeemRepository(): RedeemRepository{
+        return RedeemRepositoryImpl()
     }
 
     @Provides
