@@ -27,4 +27,21 @@
     <string name="enter_new_password">Введите новый пароль</string>
     <string name="error_alert">Ошибка</string>
     <string name="incorrect_email">Некорректная почта</string>
+    <string name="welcome_menu">Добро пожаловать!</string>
+    <string name="choose_coffee">Выберите Ваш кофе</string>
+    <string name="profile">Профиль</string>
+    <string name="name">Имя</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="email">Почта</string>
+    <string name="magic_coffee">Адрес кофейни Magic Coffee</string>
+    <string name="qr">QR-код</string>
+    <string name="for_order">Для получения заказа</string>
+    <string name="reward">Вознаграждение</string>
+    <string name="loyalty_card">Карта лояльности</string>
+    <string name="my_points">Мои баллы:</string>
+    <string name="pay_points">Оплатить баллами</string>
+    <string name="points_history">История начисления баллов</string>
+    <string name="pay_with_points">Оплатить баллами</string>
+    <string name="date_to">"Действительно до "</string>
+    <string name="points">" баллов"</string>
 </resources>

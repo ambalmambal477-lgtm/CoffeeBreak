@@ -30,4 +30,19 @@ sealed class Navigation {
 
     @Serializable
     data object ResetPassword: Navigation()
+
+    @Serializable
+    data object RewardScreen: Navigation()
+
+    @Serializable
+    data object MyOrderHistory: Navigation()
+
+    @Serializable
+    data object Profile: Navigation()
+
+    @Serializable
+    data object OrderOptions: Navigation()
+
+    @Serializable
+    data object Redeem: Navigation()
 }
