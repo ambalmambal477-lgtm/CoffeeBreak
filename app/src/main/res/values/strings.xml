@@ -44,4 +44,22 @@
     <string name="pay_with_points">Оплатить баллами</string>
     <string name="date_to">"Действительно до "</string>
     <string name="points">" баллов"</string>
+    <string name="order">Заказ</string>
+    <string name="capuccino">Капучино</string>
+    <string name="ristretto">Ристретто</string>
+    <string name="one">Один</string>
+    <string name="two">Два</string>
+    <string name="on_sit">На месте / навынос</string>
+    <string name="volume">Объем, мл</string>
+    <string name="prepare">Приготовить к\nопределенному времени\nсегодня?</string>
+    <string name="coffee_constructor">Конструктор кофемана</string>
+    <string name="total_sum">Итоговая сумма</string>
+    <string name="next">Далее</string>
+    <string name="choose_barista">Выберите бариста</string>
+    <string name="sort_coffee">Сорт кофе</string>
+    <string name="additives">Добавки</string>
+    <string name="order_constructor">Конструктор заказа</string>
+    <string name="choose_country">Выберите страну и сорт кофе</string>
+    <string name="choose_coutry_coffee">Выберите страну</string>
+    <string name="choose_sort">Выберите сорт кофе</string>
 </resources>

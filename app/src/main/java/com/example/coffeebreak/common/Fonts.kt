@@ -33,3 +33,9 @@ val robotoMedium = FontFamily(
         resId = R.font.roboto_medium
     )
 )
+
+val montserratSemiBold = FontFamily(
+    Font(
+        resId = R.font.montserrat_semibold
+    )
+)

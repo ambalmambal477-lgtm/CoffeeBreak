@@ -17,4 +17,8 @@
     <color name="menuText">#1D1D1D</color>
     <color name="inactive">#D8D8D8</color>
     <color name="pointsButton">#30A2CDE9</color>
+    <color name="secondColor">#147F37</color>
+    <color name="baristaStatus">#3B3B3B</color>
+    <color name="red">#FF3030</color>
+    <color name="bg">#334855</color>
 </resources>
