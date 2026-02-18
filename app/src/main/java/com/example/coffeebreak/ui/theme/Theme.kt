@@ -62,7 +62,13 @@ data class ThemeColors(
     val titleProfileText: Color = Color(0x00183338).copy(alpha = 0.22f),
     val infoProfileText: Color = Color(0xFF324A59),
     val pointDate: Color = Color(0x324A5938).copy(alpha = 0.22f),
-    val dateTo: Color = Color(0x324A5980).copy(alpha = 0.5f)
+    val dateTo: Color = Color(0x324A5980).copy(alpha = 0.5f),
+    val orderOptionBox: Color = Color(0xFFF7F8FB),
+    val orderOptionText: Color = Color(0xFF282828),
+    val activeBorder: Color = Color(0xFF1D1D1D),
+    val timeBox: Color = Color(0x1F767680),
+    val blackWhite: Color = Color.Black,
+    val chooseBarista: Color = Color(0xFF001833)
 )
 
 private val LocalTheme = staticCompositionLocalOf {
@@ -98,7 +104,13 @@ fun AppTheme(
             titleProfileText = Color(0xFF4F7993),
             infoProfileText = Color(0xFFAAAAAA),
             pointDate = Color(0xFFA1A1A1),
-            dateTo = Color(0xFFA1A1A1)
+            dateTo = Color(0xFFA1A1A1),
+            orderOptionBox = Color.White,
+            orderOptionText = Color(0xFF4F7993),
+            activeBorder = Color(0xFF334855),
+            timeBox = Color(0x1F767680),
+            blackWhite = Color.White,
+            chooseBarista = Color(0xFF4F7993)
         )
     } else{
         ThemeColors(
@@ -125,7 +137,13 @@ fun AppTheme(
             titleProfileText = Color(0x00183338).copy(alpha = 0.22f),
             infoProfileText = Color(0xFF324A59),
             pointDate = Color(0x324A5938).copy(alpha = 0.22f),
-            dateTo = Color(0x324A5980).copy(alpha = 0.5f)
+            dateTo = Color(0x324A5980).copy(alpha = 0.5f),
+            orderOptionBox = Color(0xFFF7F8FB),
+            orderOptionText = Color(0xFF282828),
+            activeBorder = Color(0xFF1D1D1D),
+            timeBox = Color(0x1F767680),
+            blackWhite = Color.Black,
+            chooseBarista = Color(0xFF001833)
         )
     }
 

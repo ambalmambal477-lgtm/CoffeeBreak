@@ -1,12 +1,20 @@
 package com.example.coffeebreak.di
 
+import com.example.coffeebreak.data.repositoryImpl.AdditivesRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.AuthRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.BaristaRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.CoffeeRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.CoffeeShopRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.CoffeeTypeRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.CountryRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.RedeemRepositoryImpl
+import com.example.coffeebreak.domain.repository.AdditivesRepository
 import com.example.coffeebreak.domain.repository.AuthRepository
+import com.example.coffeebreak.domain.repository.BaristaRepository
 import com.example.coffeebreak.domain.repository.CoffeeRepository
 import com.example.coffeebreak.domain.repository.CoffeeShopRepository
+import com.example.coffeebreak.domain.repository.CoffeeTypeRepository
+import com.example.coffeebreak.domain.repository.CountryRepository
 import com.example.coffeebreak.domain.repository.RedeemRepository
 import com.example.coffeebreak.domain.usecase.AuthUseCase
 import com.example.coffeebreak.domain.usecase.IsEmailValidUseCase
@@ -43,6 +51,30 @@ object AppModule {
     @Singleton
     fun provideRedeemRepository(): RedeemRepository{
         return RedeemRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideBaristaRepository(): BaristaRepository{
+        return BaristaRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideCountryRepository(): CountryRepository{
+        return CountryRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideCoffeeTypeRepository(): CoffeeTypeRepository{
+        return CoffeeTypeRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideAdditivesRepository(): AdditivesRepository{
+        return AdditivesRepositoryImpl()
     }
 
     @Provides

@@ -45,4 +45,19 @@ sealed class Navigation {
 
     @Serializable
     data object Redeem: Navigation()
+
+    @Serializable
+    data object Designer: Navigation()
+
+    @Serializable
+    data object Barista: Navigation()
+
+    @Serializable
+    data object CoffeeCountry: Navigation()
+
+    @Serializable
+    data object CoffeeType: Navigation()
+
+    @Serializable
+    data object Additives: Navigation()
 }

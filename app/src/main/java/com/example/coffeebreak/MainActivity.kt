@@ -7,8 +7,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.coffeebreak.presentation.Additives.AdditivesScreen
 import com.example.coffeebreak.presentation.Authorization.AuthorizationScreen
+import com.example.coffeebreak.presentation.Barista.BaristaScreen
 import com.example.coffeebreak.presentation.Cafe.CafeScreen
+import com.example.coffeebreak.presentation.CoffeeCountry.CoffeeCountryScreen
+import com.example.coffeebreak.presentation.CoffeeType.CoffeeTypeScreen
+import com.example.coffeebreak.presentation.Designer.DesignerScreen
 import com.example.coffeebreak.presentation.ForgotPassword.ForgotPasswordScreen
 import com.example.coffeebreak.presentation.Menu.MenuScreen
 import com.example.coffeebreak.presentation.OrderOptions.OrderOptionsScreen
@@ -74,6 +79,21 @@ class MainActivity : ComponentActivity() {
                     }
                     composable<Navigation.Redeem> {
                         RedeemScreen(navController)
+                    }
+                    composable<Navigation.Designer> {
+                        DesignerScreen(navController)
+                    }
+                    composable<Navigation.Barista> {
+                        BaristaScreen(navController)
+                    }
+                    composable<Navigation.CoffeeCountry> {
+                        CoffeeCountryScreen(navController)
+                    }
+                    composable<Navigation.CoffeeType> {
+                        CoffeeTypeScreen(navController)
+                    }
+                    composable<Navigation.Additives> {
+                        AdditivesScreen(navController)
                     }
                 }
             }
