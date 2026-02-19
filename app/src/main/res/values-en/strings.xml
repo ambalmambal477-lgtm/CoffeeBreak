@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CoffeeBreak</string>
+    <string name="app_name">ncoffee</string>
     <string name="coffee_break">Coffee break</string>
     <string name="feel_barista">Feel like a\nbarista!</string>
     <string name="any_coffee">Any coffee for your order</string>
