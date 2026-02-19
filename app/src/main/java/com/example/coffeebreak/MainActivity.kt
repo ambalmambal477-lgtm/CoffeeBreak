@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
 import com.example.coffeebreak.presentation.Additives.AdditivesScreen
 import com.example.coffeebreak.presentation.Authorization.AuthorizationScreen
 import com.example.coffeebreak.presentation.Barista.BaristaScreen
@@ -16,6 +17,10 @@ import com.example.coffeebreak.presentation.CoffeeType.CoffeeTypeScreen
 import com.example.coffeebreak.presentation.Designer.DesignerScreen
 import com.example.coffeebreak.presentation.ForgotPassword.ForgotPasswordScreen
 import com.example.coffeebreak.presentation.Menu.MenuScreen
+import com.example.coffeebreak.presentation.MyOrder.MyOrderScreen
+import com.example.coffeebreak.presentation.MyOrderCurrent.MyOrderCurrentScreen
+import com.example.coffeebreak.presentation.MyOrderHistory.MyOrderHistoryScreen
+import com.example.coffeebreak.presentation.OrderIsConfirmed.OrderIsConfirmedScreen
 import com.example.coffeebreak.presentation.OrderOptions.OrderOptionsScreen
 import com.example.coffeebreak.presentation.Profile.ProfileScreen
 import com.example.coffeebreak.presentation.Redeem.RedeemScreen
@@ -26,7 +31,6 @@ import com.example.coffeebreak.presentation.StartUp.StartUpScreen
 import com.example.coffeebreak.presentation.TwoFactorVerification.TwoFactorVerificationScreen
 import com.example.coffeebreak.presentation.Welcome.WelcomeScreen
 import com.example.coffeebreak.ui.theme.AppTheme
-import com.example.coffeebreak.ui.theme.CoffeeBreakTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -66,7 +70,7 @@ class MainActivity : ComponentActivity() {
                         ResetPasswordScreen(navController)
                     }
                     composable<Navigation.MyOrderHistory> {
-
+                        MyOrderHistoryScreen(navController)
                     }
                     composable<Navigation.RewardScreen> {
                         RewardScreen(navController)
@@ -94,6 +98,16 @@ class MainActivity : ComponentActivity() {
                     }
                     composable<Navigation.Additives> {
                         AdditivesScreen(navController)
+                    }
+                    composable<Navigation.MyOrder> {
+                        MyOrderScreen(navController)
+                    }
+                    composable<Navigation.OrderConfirmed> { backStackEntry ->
+                        val route = backStackEntry.toRoute<Navigation.OrderConfirmed>()
+                        OrderIsConfirmedScreen(navController, name = route.name, address = route.address)
+                    }
+                    composable<Navigation.MyOrderCurrent> {
+                        MyOrderCurrentScreen(navController)
                     }
                 }
             }

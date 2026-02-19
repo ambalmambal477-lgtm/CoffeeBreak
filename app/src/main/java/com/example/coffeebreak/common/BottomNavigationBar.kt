@@ -72,7 +72,9 @@ fun BottomNavigationBar(
             }
             IconButton(
                 onClick = {
-
+                    if(currentScreen != Navigation.MyOrderHistory){
+                        navController.navigate(Navigation.MyOrderHistory)
+                    }
                 }
             ) {
                 Icon(painter = painterResource(R.drawable.chek_icon),

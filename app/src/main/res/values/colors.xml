@@ -21,4 +21,6 @@
     <color name="baristaStatus">#3B3B3B</color>
     <color name="red">#FF3030</color>
     <color name="bg">#334855</color>
+    <color name="gray">#757575</color>
+    <color name="totalSum">#183338</color>
 </resources>

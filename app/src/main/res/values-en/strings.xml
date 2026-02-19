@@ -63,4 +63,21 @@
     <string name="choose_country">Choose the country and the type of coffee</string>
     <string name="choose_coutry_coffee">Choose the country</string>
     <string name="choose_sort">Choose the type of coffee</string>
+    <string name="encyclopedya">Encyclopedia of coffee lovers</string>
+    <string name="skip">Skip</string>
+    <string name="my_order">My order</string>
+    <string name="order_pay">Order payment</string>
+    <string name="coffee_break_cafe">cafe Coffee break</string>
+    <string name="pay_online">Online payment</string>
+    <string name="sbp">SBP</string>
+    <string name="bank_card">Bank card</string>
+    <string name="total_amount">Total cost</string>
+    <string name="ordered">Ordered</string>
+    <string name="pay_now">Pay now</string>
+    <string name="n_002">, Your order N 002 has been successfully placed.</string>
+    <string name="order_prepare_today">The order will be ready today by</string>
+    <string name="show_qr">Present your personal QR code at the coffee shop to receive your order.</string>
+    <string name="current_order">Current Order N</string>
+    <string name="order_history">Order history</string>
+    <string name="orderr">To order</string>
 </resources>

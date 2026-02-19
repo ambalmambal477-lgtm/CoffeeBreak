@@ -60,4 +60,13 @@ sealed class Navigation {
 
     @Serializable
     data object Additives: Navigation()
+
+    @Serializable
+    data object MyOrder: Navigation()
+
+    @Serializable
+    data class OrderConfirmed(val name: String, val address: String): Navigation()
+
+    @Serializable
+    data object MyOrderCurrent: Navigation()
 }
