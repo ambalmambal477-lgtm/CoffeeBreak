@@ -7,6 +7,8 @@ import com.example.coffeebreak.data.repositoryImpl.CoffeeRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.CoffeeShopRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.CoffeeTypeRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.CountryRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.OrderRepositoryImpl
+import com.example.coffeebreak.data.repositoryImpl.ProfileRepositoryImpl
 import com.example.coffeebreak.data.repositoryImpl.RedeemRepositoryImpl
 import com.example.coffeebreak.domain.repository.AdditivesRepository
 import com.example.coffeebreak.domain.repository.AuthRepository
@@ -15,6 +17,8 @@ import com.example.coffeebreak.domain.repository.CoffeeRepository
 import com.example.coffeebreak.domain.repository.CoffeeShopRepository
 import com.example.coffeebreak.domain.repository.CoffeeTypeRepository
 import com.example.coffeebreak.domain.repository.CountryRepository
+import com.example.coffeebreak.domain.repository.OrderRepository
+import com.example.coffeebreak.domain.repository.ProfileRepository
 import com.example.coffeebreak.domain.repository.RedeemRepository
 import com.example.coffeebreak.domain.usecase.AuthUseCase
 import com.example.coffeebreak.domain.usecase.IsEmailValidUseCase
@@ -75,6 +79,18 @@ object AppModule {
     @Singleton
     fun provideAdditivesRepository(): AdditivesRepository{
         return AdditivesRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideOrderRepository(): OrderRepository{
+        return OrderRepositoryImpl()
+    }
+
+    @Provides
+    @Singleton
+    fun provideProfileRepository(): ProfileRepository{
+        return ProfileRepositoryImpl()
     }
 
     @Provides

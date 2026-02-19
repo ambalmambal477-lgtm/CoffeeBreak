@@ -77,7 +77,7 @@ fun MenuScreen(navController: NavController, vm: MenuVM = hiltViewModel()) {
                         tint = Theme.colors.menuIcons,
                         modifier = Modifier
                             .clickable{
-                                navController.navigate(Navigation.Profile)
+                                navController.navigate(Navigation.MyOrderCurrent)
                             })
                     Icon(painter = painterResource(R.drawable.menu_profile),
                         contentDescription = null,

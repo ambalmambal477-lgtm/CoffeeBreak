@@ -62,4 +62,21 @@
     <string name="choose_country">Выберите страну и сорт кофе</string>
     <string name="choose_coutry_coffee">Выберите страну</string>
     <string name="choose_sort">Выберите сорт кофе</string>
+    <string name="encyclopedya">Энциклопедия кофемана</string>
+    <string name="skip">Пропустить</string>
+    <string name="my_order">Мой заказ</string>
+    <string name="order_pay">Оплата заказа</string>
+    <string name="coffee_break_cafe">кофейня Coffee break</string>
+    <string name="pay_online">Оплата онлайн</string>
+    <string name="sbp">СБП</string>
+    <string name="bank_card">Банковская карта</string>
+    <string name="total_amount">Итоговая стоимость</string>
+    <string name="ordered">Заказано</string>
+    <string name="pay_now">Оплатить\nсейчас</string>
+    <string name="n_002">, Ваш заказ N 002 успешно размещен.</string>
+    <string name="order_prepare_today">Заказ будет готов сегодня</string>
+    <string name="show_qr">предъявите Ваш персональный QR-код\nв кофейне для получения заказа.</string>
+    <string name="current_order">Текущий заказ N</string>
+    <string name="order_history">История заказов</string>
+    <string name="orderr">Заказать</string>
 </resources>

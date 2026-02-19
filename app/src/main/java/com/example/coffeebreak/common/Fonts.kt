@@ -39,3 +39,15 @@ val montserratSemiBold = FontFamily(
         resId = R.font.montserrat_semibold
     )
 )
+
+val interRegular = FontFamily(
+    Font(
+        resId = R.font.inter_regular
+    )
+)
+
+val montserratRegular = FontFamily(
+    Font(
+        resId = R.font.montserrat_regular
+    )
+)
